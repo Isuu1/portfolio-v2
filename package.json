@@ -17,7 +17,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "motion": "^12.7.4",
-    "next": "15.3.1",
+    "next": "15.3.8",
     "next-sanity": "^9.10.2",
     "nodemailer": "^6.10.1",
     "react": "^19.0.0",
