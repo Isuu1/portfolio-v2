@@ -4,13 +4,13 @@ import Image from "next/image";
 //Styles
 import styles from "@/features/project-details/components/ProjectImages.module.scss";
 //Animations
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 //Utils
 import { urlFor } from "@/sanity/lib/image";
 //Types
 import { Project } from "@/shared/types/project";
 
-const projectImagesVariants = {
+const projectImagesVariants: Variants = {
   visible: {
     x: 0,
     opacity: 1,
