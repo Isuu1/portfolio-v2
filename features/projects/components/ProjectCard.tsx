@@ -66,6 +66,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   const router = useRouter();
 
+  const slicedTechnologies = project.technologies.slice(0, 4);
+
   return (
     <motion.div
       className={styles.projectCard}
@@ -88,14 +90,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           >
             <h2 className={styles.name}>{project.name}</h2>
             <div className={styles.technologies}>
-              {project.technologies.map((tech, index) => (
+              {slicedTechnologies.map((tech, index) => (
                 <div key={index}>
                   <em>#{tech}</em>
                 </div>
               ))}
             </div>
 
-            <PortableText value={project.short_description} />
+            <div className={styles.short_description}>
+              <PortableText value={project.short_description} />
+            </div>
+
             <div className={styles.buttons}>
               <Button
                 variant="secondary"
