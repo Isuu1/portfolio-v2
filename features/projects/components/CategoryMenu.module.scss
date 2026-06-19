@@ -7,7 +7,7 @@
   width: 100%;
   text-align: center;
   list-style: none;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 500;
   .loadingPlaceholder {
     opacity: 0;
@@ -15,7 +15,7 @@
   .item {
     cursor: pointer;
     background: transparent;
-    padding: 1rem 1.7rem;
+    padding: 0.7rem 1.5rem;
     transition: background 0.3s ease;
   }
   .item:hover {
