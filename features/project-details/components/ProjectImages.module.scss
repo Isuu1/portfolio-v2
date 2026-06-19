@@ -1,11 +1,9 @@
 .projectImages {
-  display: flex;
-  flex-direction: column;
   overflow: auto;
   .imagesWrapper {
-    flex: 1;
     .image {
       position: relative !important;
+      object-fit: cover;
     }
   }
 }
