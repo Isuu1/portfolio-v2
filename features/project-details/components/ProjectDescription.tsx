@@ -5,7 +5,7 @@ import styles from "@/features/project-details/components/ProjectDescription.mod
 //Types
 import { Project } from "@/shared/types/project";
 //Animations
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import { PortableText } from "next-sanity";
 //Icons
 import { FaArrowLeft } from "react-icons/fa6";
@@ -31,7 +31,7 @@ export const projectDescriptionVariants = {
   },
 };
 
-const descriptionItemVariants = {
+const descriptionItemVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 70,

@@ -11,7 +11,7 @@ import styles from "@/features/projects/components/ProjectCard.module.scss";
 //Utils
 import { urlFor } from "@/sanity/lib/image";
 //Animations
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, type Variants } from "motion/react";
 import Button from "@/shared/components/ui/Button";
 import { useRouter } from "next/navigation";
 
@@ -43,7 +43,7 @@ export const projectCardVariants = {
   },
 };
 
-const projectDetailsVariants = {
+const projectDetailsVariants: Variants = {
   hidden: {
     opacity: 0,
     transition: {
